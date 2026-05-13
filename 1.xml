@@ -183,7 +183,7 @@ function InitGame() {
 }
 
 // --- Unity loader with wasm.br part merging ---
-var buildUrl = 'https://cdn.jsdelivr.net/gh/z799gs/8poo@main/Build';
+var buildUrl = 'https://cdn.jsdelivr.net/gh/z799gs/8poo@4d78100/Build';
 
 async function loadWasmParts() {
   var totalParts = 9;
@@ -206,7 +206,7 @@ async function startGame() {
   var wasmUrl = await loadWasmParts();
 
   var config = {
-    dataUrl: buildUrl + '/builld.data.br',
+    dataUrl: 'https://cdn.jsdelivr.net/gh/z799gs/8poo@7a8aff0/Build/builld.data.br',
     frameworkUrl: buildUrl + '/builld.framework.js',
     codeUrl: wasmUrl,
     streamingAssetsUrl: 'StreamingAssets',
